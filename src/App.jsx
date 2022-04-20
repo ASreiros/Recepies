@@ -33,10 +33,10 @@ localStorage.setItem("meals", JSON.stringify(favDishes))
     <BrowserRouter>
       <DishesContext.Provider value={[setDishes, dishes, setFavDishes,  favDishes]}>
         <div className="App">
-          <h1>Receptai</h1>
+          <h1>Recepies</h1>
           <div className='horizontal-holder'>
-            <Link to="/" className='control-btn'>Patiekalų paieška</Link>
-            <Link to="/favorite" className='control-btn'>Megstamiausi patiekalai</Link>
+            <Link to="/" className='control-btn'>Search</Link>
+            <Link to="/favorite" className='control-btn'>Favorite recepies</Link>
           </div>
           <Routes>
             <Route path='/' element={<Search></Search>}></Route>
