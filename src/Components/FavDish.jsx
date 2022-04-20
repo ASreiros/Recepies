@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import DishesContext from "../Contexts/DishesContext";
 
 export default function FavDish({dish}){
